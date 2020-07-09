@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,92 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <div class="header__logo">
-                    <img src="images/logo.png" alt="MartPlace Logo">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <img src="images/logo.png" alt="MartPlace Logo">
+                    </div>
+                    <div class="header__top-btn">
+                        <a href="#">
+                            Become a Seller
+                        </a>
+                    </div>
+                    <div class="header__top-info">
+                        <div class="header__top-avatar">
+                            <img src="images/header-avatar.png" alt="Account Avatar">
+                        </div>
+                        <div class="header__top-name">
+                            <a href="#">Taofiq Hakim</a>
+                            <span>$20.45</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="header__top-btn">
-                    <a href="#">
-                        Become a Seller
-                    </a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__menu-inner">
+                    <ul class="header__menu-list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">all products</a></li>
+                        <li><a href="#">wordpress </a></li>
+                        <li><a href="#">festures</a></li>
+                        <li><a href="#">Pages</a></li>
+                    </ul>
+                    <div class="header__menu-search">
+                        <form>
+                            <input type="text" placeholder="Search product here..." required>
+                            <button type="submit">
+                                <img src="images/icons/search.svg" alt="search icon">
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    
+    <section class="view" style="background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);">
+        <div class="container">
+            <div class="view__title">
+               <div>Create Your Own</div>Digital Product Marketplace
+            </div>
+            <div class="view__text">
+                MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+            </div>
+            <div class="view__btn">
+                <a href="#">View All Products</a>
+                <a href="#">Popular Products</a>
+            </div>
+            <div class="view__search-box">
+                <form>
+                    <input type="text" placeholder="Search your products..." required>
+                    <select name="categories" id="">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Plugins">Plugins</option>
+                        <option value="WordPress">WordPress</option>
+                        <option value="Site Template">Site Template</option>
+                        <option value="PSD Template">PSD Template</option>
+                        <option value="Joomla">Joomla</option>
+                        <option value="User Interface">User Interface</option>
+                        <option value="Landing Page">Landing Page</option>
+                        <option value="Software">Software</option>
+                    </select>
+                    <button>
+                        Search Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
