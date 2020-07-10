@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="header__top-inner">
                     <div class="header__logo">
-                        <img src="images/logo.png" alt="MartPlace Logo">
+                        <a href="#"><img src="images/logo.png" alt="MartPlace Logo"></a>
                     </div>
                     <div class="header__top-btn">
                         <a href="#">
@@ -50,7 +50,7 @@
                         <form>
                             <input type="text" placeholder="Search product here..." required>
                             <button type="submit">
-                                <img src="images/icons/search.svg" alt="search icon">
+                                <img src="images/icons/search.png" alt="search icon">
                             </button>
                         </form>
                     </div>
@@ -60,19 +60,20 @@
     </header>
     <section class="view" style="background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);">
         <div class="container">
-            <div class="view__title">
+            <h1 class="view__title">
                <div>Create Your Own</div>Digital Product Marketplace
-            </div>
-            <div class="view__text">
+            </h1>
+            <h2 class="view__text">
                 MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-            </div>
+            </h2>
             <div class="view__btn">
-                <a href="#">View All Products</a>
-                <a href="#">Popular Products</a>
+                <a class="view__btn-view" href="#">View All Products</a>
+                <a class="view__btn-popular" href="#">Popular Products</a>
             </div>
             <div class="view__search-box">
                 <form>
                     <input type="text" placeholder="Search your products..." required>
+                    <div class="view__select-box">
                     <select name="categories" id="">
                         <option value="All Categories">All Categories</option>
                         <option value="Plugins">Plugins</option>
@@ -84,10 +85,66 @@
                         <option value="Landing Page">Landing Page</option>
                         <option value="Software">Software</option>
                     </select>
-                    <button>
-                        Search Now
+                </div>
+                    <button type="submit">
+                         Search Now
                     </button>
                 </form>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__item">
+                    <div class="about__item-img">
+                        <img src="images/research.png" alt="reasearch image">
+                    </div>
+                    <h2 class="about__item-title">
+                        Best UX Research
+                    </h2>
+                    <div class="about__item-text">
+                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.</p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item-img">
+                        <img src="images/responsive.png" alt="responsive image">
+                    </div>
+                    <h2 class="about__item-title">
+                        Fully Responsive
+                    </h2>
+                    <div class="about__item-text">
+                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.</p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item-img">
+                        <img src="images/buy_sell.png" alt="buy-sell image">
+                    </div>
+                    <h2 class="about__item-title">
+                        Buy & Sell Easily
+                    </h2>
+                    <div class="about__item-text">
+                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="weekly">
+        <div class="container">
+            <div class="weekly__title">
+                <h2>Weekly Featured Products</h2>
+            </div>
+            <div class="weekly__slider">
+                
             </div>
         </div>
     </section>
