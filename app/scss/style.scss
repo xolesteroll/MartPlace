@@ -60,6 +60,7 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 font-size: 15px;
+                transition: all 0.3s;
                 &:hover {
                     color: $blue;
                 }
@@ -352,11 +353,13 @@
             padding: 9px 18px;
             border-radius: 16px;
         }
-        &-stars {
-            img {
-                display: inline-block;
-            }
+        &-likes{
+            margin: 0 19px;
         }
+        &-bought{
+            margin-right: auto;
+        }
+
     }
 }
 
@@ -442,7 +445,7 @@
             cursor: pointer;
             overflow: hidden;
             &:hover .newest__item-btn {
-                transform: translateX(0);
+                opacity: 1;
             }
         }
         &-btn {
@@ -451,9 +454,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all 0.5s;
+            transition: all 1s;
             border-radius: 4px 4px 0 0;
-            transform: translateX(-100%);
+            opacity: 0;
             font-size: 15px;
             font-weight: 50;
             a {
@@ -512,8 +515,11 @@
             }
         }
         &-likes {
-            margin-right: auto;
+            margin-right: 16px;
             margin-left: 13px;
+        }
+        .rate-star__small{
+            margin-right: auto;
         }
     }
     &__new-products{
