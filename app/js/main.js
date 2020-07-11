@@ -5,4 +5,10 @@ $(function(){
         fade: true,
         infinite: true
     });
+
+    var mixer = mixitup('.newest__inner');
+
+
+
+
 });
