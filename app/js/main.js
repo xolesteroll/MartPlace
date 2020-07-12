@@ -6,6 +6,15 @@ $(function () {
         infinite: true
     });
 
+    $('.followers__slider').slick({
+        nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/arrow-right.png" alt="next arrow"></button>',
+        prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/arrow-left.png" alt="prev arrow"></button>',
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+
+    });
+
     var mixer = mixitup('.newest__inner');
 
     $('.rate-star').rateYo({
@@ -21,6 +30,8 @@ $(function () {
         starHeight: '12px',
         spacing: '4px'
     });
+
+    
 
 
 
