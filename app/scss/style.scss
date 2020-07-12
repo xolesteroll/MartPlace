@@ -426,6 +426,10 @@
             & + button {
                 margin-left: 5px;
             }
+            &.mixitup-control-active{
+                background-color: $blue;
+                color: #ffffff;
+            }
         }
     }
     &__inner{
@@ -517,6 +521,9 @@
         &-likes {
             margin-right: 16px;
             margin-left: 13px;
+        }
+        &-bought{
+            margin-left: auto;
         }
         .rate-star__small{
             margin-right: auto;

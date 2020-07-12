@@ -53,6 +53,9 @@ select {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+// Стандартный заголовок для секции
+
 .section-title {
     font-size: 30px;
     font-weight: 400;
@@ -67,6 +70,9 @@ select {
     align-items: center;
     min-height: 110px;
 }
+
+//Стандартный стили для лейблов
+
 .item-labels {
     display: flex;
     align-items: center;
@@ -90,6 +96,9 @@ select {
         }
     }
 }
+
+//Стандартные стили для лайков
+
 .item-likes {
     padding-left: 22px;
     position: relative;
@@ -107,6 +116,9 @@ select {
         cursor: pointer;
     }
 }
+
+//Стандартные стили для счетчика покупок данного товара
+
 .item-bought {
     padding-left: 23px;
     position: relative;
