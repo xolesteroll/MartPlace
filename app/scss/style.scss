@@ -468,9 +468,24 @@
 .followers{
     padding: 120px 0;
     background-color: #eff1f5;
+    &__slider{
+        .slick-arrow{
+            width: 56px;
+            background-color: $blue;
+            padding: 15px 0;
+        }
+        .slick-prev{
+            border-radius: 50% 0 0 50%;
+        }
+        .slick-next{
+            border-radius: 0 50% 50% 0;
+        }
+    }
     .slick-list{
-        padding-left: 19px;
-        padding-right: 19px;
+        width: 100%;
+        .slick-slide + .slick-slide{
+            margin-right: 28px;
+        }
     }
 }
 

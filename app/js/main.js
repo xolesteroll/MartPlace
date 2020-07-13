@@ -11,8 +11,8 @@ $(function () {
         prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/arrow-left.png" alt="prev arrow"></button>',
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3
-
+        slidesToScroll: 3,
+        variableWidth: true
     });
 
     var mixer = mixitup('.newest__inner');
