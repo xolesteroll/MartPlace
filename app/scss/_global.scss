@@ -198,16 +198,16 @@ select {
     padding-left: 22px;
     position: relative;
     &:before {
-        content: "";
+        content: "\e813";
         position: absolute;
-        width: 16px;
-        height: 14px;
-        background-image: url(../images/icons/heart.png);
+        font-size: 15px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         left: 0;
-        top: 3px;
+        top: 1px;
+        font-family: 'Linearicons-Free';
+        color: #7f4ec2;
         cursor: pointer;
     }
 }
@@ -221,16 +221,13 @@ select {
     font-weight: 400;
     color: $blue;
     &:before {
-        content: "";
+        content: "\e82e";
         position: absolute;
-        width: 14px;
-        height: 14px;
-        background-image: url(../images/icons/cart.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        font-size: 15px;
+        font-family: 'Linearicons-Free';
+        color: $blue;
         left: 0;
-        top: 1px;
+        top: 0;
         cursor: pointer;
     }
 }

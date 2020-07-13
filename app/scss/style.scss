@@ -2,8 +2,6 @@
 @import "global";
 @import "fonts";
 
-.header {
-}
 .header__top {
     background-color: #eef1f3;
     &-inner {
@@ -23,13 +21,67 @@
             padding: 12px 18px;
         }
     }
+    &-icons{
+        max-width: 122px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 45px;
+    }
+    &-bell {
+        position: relative;
+        &::before{
+            content: "\e858";
+            position: absolute;
+            font-family: 'Linearicons-Free';
+            font-size: 20px;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            color: #7e8fa1;
+            cursor: pointer;
+        }
+    }
+    &-mail {
+        position: relative;
+        &::before{
+            content: "\e818";
+            position: absolute;
+            font-family: 'Linearicons-Free';
+            font-size: 20px;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            color: #7e8fa1;
+            cursor: pointer;
+        }
+    }
+    &-cart {
+        position: relative;
+        &::before{
+            content: "\e82e";
+            position: absolute;
+            font-family: 'Linearicons-Free';
+            font-size: 20px;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            color: #7e8fa1;
+            cursor: pointer;
+        }
+    }
+    .header__top-mail {
+    }
+    .header__top-cart {
+    }
     &-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &-avatar {
-        margin-right: 22px;
+        margin: 0 22px;
     }
     &-name {
         a {
@@ -483,6 +535,7 @@
     }
     .slick-list{
         width: 100%;
+        border-radius: 4px;
         .slick-slide + .slick-slide{
             margin-right: 28px;
         }
