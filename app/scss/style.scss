@@ -505,19 +505,18 @@
         flex-wrap: wrap;
         padding-bottom: 28px;
     }
-
     &__new-products {
         text-align: center;
-        button {
-            font-size: 16px;
-            color: #ffffff;
-            font-weight: 400;
-            background-color: $blue;
-            padding: 22px 39px;
-            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-            border-radius: 30px;
-        }
     }
+}
+.button-blue {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: $blue;
+    padding: 22px 39px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
 }
 //End weekly section
 
@@ -677,6 +676,9 @@
         }
     }
 }
+//End choose section
+
+//Start buy-sell section
 .buy-sell {
     display: flex;
     & > div {
@@ -688,21 +690,21 @@
         padding: 100px 0;
         text-align: center;
     }
-    &__img{
+    &__img {
         margin-bottom: 49px;
     }
-    &__title{
-      color: #ffffff; 
-      font-size: 36px;
-      font-weight: 400;
-      margin-bottom: 33px;
+    &__title {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 33px;
     }
-    &__text{
+    &__text {
         color: #ffffff;
         max-width: 585px;
         margin: 0 auto;
     }
-    &__btn{
+    &__btn {
         margin-top: 50px;
         width: 190px;
         background-color: #ffffff;
@@ -712,24 +714,157 @@
         padding: 21px 5px;
         transition: all 0.5s;
         max-height: 60px;
-        &.author-btn{
+        &.author-btn {
             color: $blue;
-            &:hover{
+            &:hover {
                 background-color: transparent;
                 color: #ffffff;
                 border: 1px solid #ffffff;
             }
         }
-        &.shopping-btn{
+        &.shopping-btn {
             color: #7347c1;
-            &:hover{
+            &:hover {
                 background-color: transparent;
                 color: #ffffff;
                 border: 1px solid #ffffff;
             }
         }
     }
-
-
 }
+//End buy-sell section
+
+//Start clients section
+.clients {
+    padding: 120px 0;
+    text-align: center;
+    &__descr {
+        max-width: 675px;
+        margin: 0 auto 60px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__item {
+        max-width: 555px;
+        padding: 50px 40px;
+        text-align: left;
+        border-left: 2px solid $blue;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        &-title {
+            margin-right: auto;
+            margin-left: 18px;
+        }
+        &-name {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &-job {
+            color: $text;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .lnr-bubble {
+            font-family: "Linearicons-Free";
+            color: #e8e8e8;
+            font-size: 60px;
+        }
+    }
+}
+//End Clients section
+
+//Start NEws Section
+.news {
+    padding: 120px 0;
+    background-color: #eff1f5;
+    text-align: center;
+    &__descr {
+        max-width: 680px;
+        margin: 0 auto 60px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .global__item {
+        &-title {
+            margin-top: 30px;
+            text-align: left;
+            padding: 0 30px;
+        }
+        &-text {
+            padding: 0 30px 30px;
+            text-align: left;
+        }
+        &-info {
+            padding: 0;
+        }
+        &-stats {
+            border-top: 1px solid #ececec;
+            padding: 10px 30px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            line-height: 40px;
+            & > div {
+                width: 50%;
+            }
+            & > div + div {
+                border-left: 1px solid #ececec;
+            }
+            .lnr-clock {
+                font-size: 15px;
+                color: #999999;
+                font-weight: 400;
+                position: relative;
+                padding: auto 0;
+                &::before {
+                    color: $blue;
+                    font-family: "Linearicons-Free";
+                    position: absolute;
+                    left: 13px;
+                }
+            }
+        }
+        &-action {
+            color: #7e7e7e;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            .lnr-bubble{
+                margin: 0 30px;
+                position: relative;
+                font-family: "Linearicons-Free";
+                padding-left: 20px;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                }
+            }
+            .lnr-eye {
+                font-family: "Linearicons-Free";
+                position: relative;
+                padding-left: 20px;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                }
+            }
+        }
+    }
+}
+
 @import "media";
