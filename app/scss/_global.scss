@@ -231,3 +231,13 @@ select {
         cursor: pointer;
     }
 }
+//Стандартный стиль тайтла с синим спаном
+
+.span-title{
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    span{
+      color: #0674ec;
+    }
+  }
