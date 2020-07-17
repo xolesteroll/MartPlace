@@ -12,24 +12,24 @@ body {
 //Лепим футер к низу
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 .content {
-	flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    &:focus{
+    &:focus {
         outline: none;
     }
 }
@@ -222,7 +222,7 @@ select {
         background-position: center;
         left: 0;
         top: 1px;
-        font-family: 'Linearicons-Free';
+        font-family: "Linearicons-Free";
         color: #7f4ec2;
         cursor: pointer;
     }
@@ -240,7 +240,7 @@ select {
         content: "\e82e";
         position: absolute;
         font-size: 15px;
-        font-family: 'Linearicons-Free';
+        font-family: "Linearicons-Free";
         color: $blue;
         left: 0;
         top: 0;
@@ -249,11 +249,43 @@ select {
 }
 //Стандартный стиль тайтла с синим спаном
 
-.span-title{
+.span-title {
     font-size: 36px;
     margin-bottom: 30px;
     font-weight: 400;
-    span, a{
-      color: #0674ec;
+    span,
+    a {
+        color: #0674ec;
     }
-  }
+}
+
+//Стандартный стиль для select-box
+
+.select-box {
+    position: relative;
+    display: inline-block;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/icons/arrow-down.png);
+        width: 13px;
+        height: 8px;
+        right: 21px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    select {
+        width: 193px;
+        padding: 0 20px;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid #dcdcdc;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+}

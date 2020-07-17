@@ -31,7 +31,7 @@
         a {
             position: relative;
             color: #7e8fa1;
-                font-size: 20px;
+            font-size: 20px;
         }
         span {
             border-radius: 50%;
@@ -155,45 +155,45 @@
     padding: 160px 15px 120px;
     margin-bottom: 100px;
     position: relative;
-    &.category-page__view{
+    &.category-page__view {
         min-height: 275px;
         padding-top: 80px;
         padding-bottom: 25px;
         margin-bottom: 0;
-        &::before{
+        &::before {
             display: none;
         }
-        &::after{
+        &::after {
             display: none;
         }
-        .view__text{
+        .view__text {
             font-size: 26px;
             color: #e7e6f3;
             margin-bottom: 33px;
-            span{
+            span {
                 color: #f3f3f8;
             }
         }
-        form{
+        form {
             max-width: 555px;
             margin: 0 auto;
             position: relative;
             margin-bottom: 30px;
-            input{
+            input {
                 width: 100%;
                 border: none;
                 border-radius: 28px;
                 min-height: 55px;
                 padding: 10px 140px 10px 30px;
-                &::placeholder{
+                &::placeholder {
                     font-size: 15px;
                     color: #747b86;
                 }
-                &:focus{
+                &:focus {
                     outline: none;
                 }
             }
-            button{
+            button {
                 position: absolute;
                 top: 0;
                 right: -2px;
@@ -204,20 +204,20 @@
                 padding: 0 30px;
             }
         }
-        .breadcrumbs__list{
-            li{
+        .breadcrumbs__list {
+            li {
                 display: inline-block;
                 padding-right: 3px;
                 position: relative;
                 color: #ffffff;
                 font-size: 15px;
-                &:last-child{
+                &:last-child {
                     color: #bfcad7;
                 }
-                & + li{
+                & + li {
                     padding-left: 17px;
                 }
-                & + li::before{
+                & + li::before {
                     content: "/";
                     position: absolute;
                     left: 0;
@@ -332,21 +332,8 @@
             }
         }
         select {
-            height: 100%;
-            width: 193px;
-            padding: 0 20px;
-            min-height: 55px;
-            border-radius: 0 4px 4px 0;
-            border: 1px solid #dcdcdc;
             border-left: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-color: transparent;
-            cursor: pointer;
-            &:focus {
-                outline: none;
-            }
+            height: 100%;
         }
         button {
             background-color: $blue;
@@ -363,17 +350,6 @@
     }
     &__select-box {
         margin-right: auto;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            background-image: url(../images/icons/arrow-down.png);
-            width: 13px;
-            height: 8px;
-            right: 21px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
     }
 }
 //End view section
@@ -1158,6 +1134,72 @@
             transition: all 0.3s;
             &:hover {
                 color: $blue;
+            }
+        }
+    }
+}
+
+//Start category-page
+
+.sort {
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+    }
+    &__btn {
+        button {
+            color: $text;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: transparent;
+            &.active-sort {
+                color: $blue;
+            }
+            & + button {
+                margin-left: 34px;
+            }
+        }
+    }
+    &__select-box {
+        &__wrapper {
+            margin-left: auto;
+            margin-right: 27px;
+        }
+        select {
+            width: 220px;
+            height: 44px;
+            color: #747b86;
+            border: 1px solid #eceff2;
+            &:last-child{
+                margin-left: 25px;
+            }
+            span {
+                color: #000000;
+            }
+            option {
+                color: #747b86;
+                font-size: 14px;
+                span {
+                    color: #000000;
+                }
+            }
+        }
+    }
+    &__icon-box{
+        border: 1px solid #eceff2;
+        border-radius: 3px;
+        height: 44px;
+        padding: 12px 20px;
+        button{
+            background-color: transparent;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            & + button{
+                margin-left: 12px;
             }
         }
     }
