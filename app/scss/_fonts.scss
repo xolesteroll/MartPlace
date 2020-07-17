@@ -32,6 +32,7 @@
 }
 .lnr-envelope:before {
 	content: "\e818";
+	font-family: 'Linearicons-Free';
 }
 .lnr-cart:before {
 	content: "\e82e";
@@ -65,6 +66,7 @@
 }
 .lnr-phone:before {
 	content: "\e831";
+	font-family: 'Linearicons-Free';
 }
 .lnr-bubble:before {
 	content: "\e83f";
@@ -75,3 +77,66 @@
 .lnr-eye:before {
 	content: "\e81b";
 }
+.lnr-map-marker:before {
+	content: "\e833";
+	font-family: 'Linearicons-Free';
+}
+
+//Font awesome 
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?tvwzzs');
+	src:  url('../fonts/icomoon.eot?tvwzzs#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?tvwzzs') format('truetype'),
+	  url('../fonts/icomoon.woff?tvwzzs') format('woff'),
+	  url('../fonts/icomoon.svg?tvwzzs#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-twitter:before {
+	content: "\f099";
+	font-family: 'icomoon';
+  }
+  .icon-facebook:before {
+	content: "\f09a";
+	font-family: 'icomoon';
+  }
+  .icon-facebook-f:before {
+	content: "\f09a";
+	font-family: 'icomoon';
+  }
+  .icon-pinterest:before {
+	content: "\f0d2";
+	font-family: 'icomoon';
+  }
+  .icon-linkedin:before {
+	content: "\f0e1";
+	font-family: 'icomoon';
+  }
+  .icon-dribbble:before {
+	content: "\f17d";
+	font-family: 'icomoon';
+  }
+  .icon-google:before {
+	content: "\f1a0";
+	font-family: 'icomoon';
+  }
+  
