@@ -1,4 +1,6 @@
 $(function () {
+
+    
     $('.weekly__slider').slick({
         nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/arrow-right.png" alt="next arrow"></button>',
         prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/arrow-left.png" alt="prev arrow"></button>',
@@ -15,7 +17,17 @@ $(function () {
         variableWidth: true
     });
 
-    var mixer = mixitup('.newest__inner');
+    $('.range-slider').ionRangeSlider({
+        type: "double",
+        prefix: "$",
+        min: 0,
+        max: 330,
+        from: 30,
+        to: 300,
+        grid: false
+    });
+
+    
 
     $('.rate-star').rateYo({
         rating: 5,
@@ -31,9 +43,7 @@ $(function () {
         spacing: '4px'
     });
 
-    
-
-
-
+    var mixer = mixitup('.newest__inner');
 
 });
+
