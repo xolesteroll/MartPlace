@@ -55,6 +55,18 @@ $(function () {
         $('.products-content .global__item').addClass('list');
     });
 
+    $('.category-box .products-aside__title').on('click', function(){
+        $('.category-box .products-aside__dropdown').slideToggle();
+    });
+
+    $('.filter-box .products-aside__title').on('click', function(){
+        $('.filter-box .products-aside__dropdown').slideToggle();
+    });
+
+    $('.range-box .products-aside__title').on('click', function(){
+        $('.range-box .products-aside__dropdown').slideToggle();
+    });
+
     var mixer = mixitup('.newest__inner');
 
 });
