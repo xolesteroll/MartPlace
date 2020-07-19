@@ -43,6 +43,18 @@ $(function () {
         spacing: '4px'
     });
 
+    $('.grid-btn').on('click', function(){
+        $(this).addClass('active');
+        $('.list-btn').removeClass('active');
+        $('.products-content .global__item').removeClass('list');
+    });
+
+    $('.list-btn').on('click', function(){
+        $(this).addClass('active');
+        $('.grid-btn').removeClass('active');
+        $('.products-content .global__item').addClass('list');
+    });
+
     var mixer = mixitup('.newest__inner');
 
 });

@@ -884,27 +884,6 @@
             justify-content: space-between;
             align-items: center;
             text-align: center;
-            .lnr-bubble {
-                margin: 0 30px;
-                position: relative;
-                font-family: "Linearicons-Free";
-                padding-left: 20px;
-                &::before {
-                    position: absolute;
-                    left: 0;
-                    bottom: -2px;
-                }
-            }
-            .lnr-eye {
-                font-family: "Linearicons-Free";
-                position: relative;
-                padding-left: 20px;
-                &::before {
-                    position: absolute;
-                    left: 0;
-                    bottom: -2px;
-                }
-            }
         }
     }
 }
@@ -1198,6 +1177,11 @@
             width: 20px;
             height: 20px;
             padding: 0;
+            &.active{
+                path{
+                   fill: #0674ec;
+                }
+            }
             & + button {
                 margin-left: 12px;
             }
@@ -1210,7 +1194,6 @@
     background-color: #eff1f5;
     &__inner {
         display: flex;
-        justify-content: space-between;
     }
     &-aside {
         min-width: 263px;
@@ -1291,6 +1274,7 @@
     }
     &-content{
         margin-left: 30px;
+        width: 100%;
         &__inner{
             display: flex;
             justify-content: space-between;
@@ -1302,8 +1286,15 @@
                     border-radius: 4px 4px 0 0;
                 }
                 &-title{
-                    margin-bottom: 15px;
-                    font-size: 18px;
+                    > a{
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin-bottom: 15px;      
+                        min-height: 50px;
+                    }
+                    .item-label{
+                        display: none;
+                    }
                 }
                 .item-labels{
                     margin-bottom: 18px;
@@ -1314,13 +1305,140 @@
                 &-text{
                     display: none;
                 }
+                &-price{
+                    padding: 0 20px;
+                    .item-bought{
+                        display: none;
+                    }
+                }
                 &-rating{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    .item-label{
+                        display: none;
+                    }
+                    .lnr-bubble{
+                        display: none;
+                    }
+                    .rate-star__inner{
+                        span{
+                            display: none;
+                        }
+                    }
+                    
                 }
                 &-info{
-                    padding: 20px 20px 15px 20px;
+                    padding: 20px 20px 16px 20px;
+                    min-height: 169px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                &.list{
+                    max-width: 100%;
+                    display: flex;
+                    width: 100%;
+                    .global__item-title{
+                        max-width: 240px;
+                        min-width: 240px;
+                        > a{
+                            margin-bottom: 22px;
+                        }
+                        p{
+                            margin-bottom: 18px;
+                        }
+                        .item-label{
+                            display: block;
+                        }
+                        
+                    }
+                    .item-likes{
+                        display: block;
+                    }
+                    .item-labels{
+                        display: none;
+                    }
+                    .global__item-img{
+                        float: left;
+                        min-height: 100%;
+                        max-width: 230px;
+                    }
+                    .global__item-price{
+                        border-left: 1px solid #ececec;
+                        min-height: 169px;
+                        margin: auto;
+                        border-top: none;
+                        flex-direction: column;
+                        justify-content: center;
+                        max-width: 150px;
+                        width: 100%;
+                        .item-label{
+                            display: none;
+                        }
+                        .item-likes{
+                            display: none;
+                        }
+                        .item-bought{
+                            margin-top: 30px;
+                            margin-left: 0;
+                            display: block;
+                        }   
+                    }
+                    .global__item-info{
+                        flex-direction: row;
+                        padding: 30px 50px 30px 20px;
+                    }
+                    .global__item-text{
+                        display: block;
+                    }
+                    .global__item-rating{
+                        display: flex;
+                        padding: 14px 0 14px 20px;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        align-items: start;
+                        border-left: 1px solid #ececec;
+                        .rate-star__inner{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                display: block;
+                                font-size: 15px;
+                                color: #6f7d8d;
+                                margin-left: 10px;
+                            }
+                        }
+                        .item-label{
+                            display: flex;
+                            align-items: center;
+                        }
+                        .item-bought{
+                            display: none;
+                        }
+                        .item-likes{
+                            margin-left: 0;
+                            margin-right: 0;
+                            color: #6f7d8d;
+                            &::before{
+                                color: #7f4ec2;
+                            }
+                        }
+                        .lnr-bubble{
+                            display: block;
+                            margin-right: 0;
+                            margin-left: 0;
+                            color: #6f7d8d;
+                            font-weight: 400;
+                            font-family: "Quicksand", sans-serif;
+                            &::before{
+                                color: #7f4ec2;
+                            }
+                        }
+                        .rate-star.jq-ry-container{
+                            padding: 0;
+                        }
+                    }
                 }
                 
             }
