@@ -56,14 +56,17 @@ $(function () {
     });
 
     $('.category-box .products-aside__title').on('click', function(){
+        $(this).toggleClass('open');
         $('.category-box .products-aside__dropdown').slideToggle();
     });
 
     $('.filter-box .products-aside__title').on('click', function(){
+        $(this).toggleClass('open');
         $('.filter-box .products-aside__dropdown').slideToggle();
     });
 
     $('.range-box .products-aside__title').on('click', function(){
+        $(this).toggleClass('open');
         $('.range-box .products-aside__dropdown').slideToggle();
     });
 
