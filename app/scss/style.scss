@@ -972,13 +972,13 @@
         }
         &__column {
             &.info-column {
-                max-width: 265px;
+                width: 265px;
             }
             &.list-column {
-                max-width: 135px;
+                width: 135px;
             }
             &.contact-column {
-                max-width: 360px;
+                width: 360px;
             }
             &.info-column {
                 a {
@@ -1099,17 +1099,14 @@
     }
     &__copy {
         min-height: 94px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 15px;
+        padding: 38px 15px;
         color: #999999;
         font-size: 15px;
+        text-align: center;
         a,
         span {
             color: #ffffff;
             display: inline-block;
-            padding-left: 3px;
             transition: all 0.3s;
             &:hover {
                 color: $blue;
@@ -1469,6 +1466,7 @@
     border-radius: 50%;
     top: -3px;
     cursor: pointer;
+    left: 0;
 }
 .irs--flat .irs-from:before,
 .irs--flat .irs-single:before,
@@ -1491,6 +1489,10 @@
 }
 .irs--flat .irs-from {
     left: 15px;
+    margin-left: 15px;
+}
+.irs--flat .irs-to{
+    margin-left: -15px;
 }
 .irs--flat {
     margin-bottom: 15px;
