@@ -22,6 +22,14 @@
         text-align: center;
     }
 }
+@media(max-width: 940px){
+    .header__menu-list{
+        display: none;
+    }
+    .header__menu-btn{
+        display: block;
+    }
+}
 @media(max-width: 760px){
     .contact-column{
         min-width: 100%;
@@ -75,4 +83,15 @@
         
     }
     
+}
+
+
+
+
+
+
+@media(min-width: 940px){
+    .header__menu-list{
+        display: block;
+    }
 }

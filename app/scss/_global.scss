@@ -248,7 +248,7 @@ select {
 }
 
 
-.lnr-bubble {
+.global__item .lnr-bubble {
     margin: 0 30px;
     position: relative;
     font-family: "Linearicons-Free";
@@ -311,3 +311,22 @@ select {
         }
     }
 }
+// Общие стили для дропдаунов в хедере
+.header-dropdown{
+    position: absolute;
+    border-top: 1px solid $blue;
+    top: 100px;
+    padding: 0 25px;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.75);
+    transition: all 0.3s;
+    &::before{
+        content: "";
+        position: absolute;
+        border: 9px solid transparent;
+        border-bottom: 9px solid $blue;
+        top: -18px;
+    }
+}
+
