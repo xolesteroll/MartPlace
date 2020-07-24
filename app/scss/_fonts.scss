@@ -116,6 +116,10 @@
 	content: "\e814";
 	font-family: 'Linearicons-Free';
 }
+.lnr-trash:before {
+	content: "\e811";
+	font-family: 'Linearicons-Free';
+}
 
 //Font awesome 
 
@@ -133,7 +137,7 @@
   
   [class^="icon-"], [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
+	font-family: 'icomoon';
 	speak: never;
 	font-style: normal;
 	font-weight: normal;
@@ -174,5 +178,10 @@
 	content: "\f1a0";
 	font-family: 'icomoon';
   }
+  .icon-reply:before {
+	content: "\f112";
+	font-family: 'icomoon';
+  }
+
 
   
