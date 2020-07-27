@@ -74,6 +74,10 @@ $(function () {
         $('.header__menu-list').slideToggle();
     });
 
+    $('.header__top-inner .lnr-user').on('click', function(){
+        $('.header__top-cabinet').toggleClass('open');
+        $(this).toggleClass('white');
+    });
 
 
 
