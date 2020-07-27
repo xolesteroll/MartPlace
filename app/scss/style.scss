@@ -424,6 +424,62 @@
         }
     }
 }
+.user-box{
+    position: relative;
+    &:hover{
+        .user-list.header-dropdown{
+            height: auto;
+            overflow: visible;
+            padding: 20px;
+            border-width: 1px;
+            a{
+                padding: 16px 15px 16px 40px;
+            }
+        }
+    }
+}
+.user-list.header-dropdown{
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+    border-width: 0;
+    min-width: 270px;
+    width: 100%;
+    left: auto;
+    right: 0;
+    top: 76px;
+    transition: all 0.3s;
+    &::before{
+        right: 25px;
+    }
+    ul{
+        li{
+            a{
+                position: relative;
+                padding: 0 15px 0 40px;
+                font-size: 15px;
+                color: #54667a;
+                width: 100%;
+                transition: all 0.3s;
+                &::before{
+                    position: absolute;
+                    left: 10px;
+                    font-size: 15px;
+                    color: #54667a;
+                    transition: all 0.3s;
+                }
+                &:hover{
+                    background-color: $blue;
+                    color: #ffffff;
+                    &::before{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    
+}
 //End Header
 
 //Start view section
