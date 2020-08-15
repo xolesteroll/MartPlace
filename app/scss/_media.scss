@@ -32,7 +32,7 @@
         > li {
             display: block;
             text-align: center;
-            background-color: #747B86;
+            background-color: #747b86;
             border-bottom: 1px solid $blue;
             a {
                 width: 100%;
@@ -42,14 +42,31 @@
             }
         }
     }
+    .megamenu__list {
+        display: none;
+    }
+    .megamenu__item.active .megamenu__list {
+        display: block;
+        transition: all 0.5s;
+    }
+    .megamenu__item.active .megamenu__lists {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .megamenu__dropdown-link:hover .megamenu.menu-dropdown {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .header__menu-btn {
         display: block;
     }
-    .menu-dropdown{
+    .menu-dropdown {
         position: static;
         width: 100%;
         // display: none;
-        &.megamenu{
+        &.megamenu {
             position: static;
             width: 100%;
         }
@@ -114,7 +131,7 @@
     .header__menu-search {
         max-width: 100%;
     }
-    .notification-box{
+    .notification-box {
         margin-left: auto;
     }
 }
@@ -128,6 +145,17 @@
     }
     .user-box {
         padding-right: 10px;
+    }
+}
+@media (max-width: 510px) {
+    .megamenu__list {
+        border-bottom: 1px solid $blue;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .megamenu__lists .megamenu__list+.megamenu__list {
+        margin-left: 0;
     }
 }
 @media (max-width: 467px) {
@@ -149,10 +177,39 @@
             content: "\e874";
             font-family: "Linearicons-Free";
             position: absolute;
-            right: 10px;
-            top: 63px;
+            left: 15px;
+            top: 45px;
             color: $blue;
-            font-size: 13px;
+            font-size: 20px;
+        }
+    }
+    .header__top-img {
+        display: none;
+    }
+    .header__top-cabinet.open {
+        height: 60px;
+        padding-right: 10%;
+    }
+    .header__top-inner {
+        min-height: 60px;
+    }
+    .header__menu-btn {
+        top: -50px;
+    }
+    .notification-box,
+    .mail-box,
+    .cart-box {
+        height: 60px;
+        padding-top: 2px;
+    }
+    .cart-box {
+        padding-top: 23px;
+    }
+    .header__top-inner > .lnr-user {
+        height: 60px;
+        width: 60px;
+        &::before {
+            font-size: 30px;
         }
     }
     .header__top-name {
@@ -160,6 +217,10 @@
     }
     .cart-box {
         margin-left: 20px;
+    }
+    .header__menu-btn div {
+        width: 36px;
+        height: 4px;
     }
 }
 @media (max-width: 441px) {

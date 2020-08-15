@@ -79,6 +79,9 @@ $(function () {
         $(this).toggleClass('white');
     });
 
+    $('.megamenu__title').on('click', function(){
+        $(this).parent('.megamenu__item').toggleClass('active');
+    });
 
 
     var mixer = mixitup('.newest__inner');
