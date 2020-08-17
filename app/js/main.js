@@ -83,6 +83,10 @@ $(function () {
         $(this).parent('.megamenu__item').toggleClass('active');
     });
 
+    $('.menu__dropdown-link').on('click', function(){
+        $('.menu-dropdown').slideToggle();
+    });
+
 
     var mixer = mixitup('.newest__inner');
 
