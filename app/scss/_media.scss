@@ -207,15 +207,15 @@
         margin-left: 0;
     }
     .user-box {
-        position: relative;
+        position: static;
         &::before {
             content: "\e874";
             font-family: "Linearicons-Free";
             position: absolute;
-            left: 15px;
-            top: 45px;
+            left: 43%;
+            top: 60%;
             color: $blue;
-            font-size: 20px;
+            font-size: 13px;
         }
     }
     .header__top-img {
@@ -256,6 +256,10 @@
     .header__menu-btn div {
         width: 36px;
         height: 4px;
+    }
+    .user-list.header-dropdown{
+        left: -15px;
+        top: 60px;
     }
 }
 @media (max-width: 441px) {
