@@ -88,7 +88,7 @@ $(function () {
     });
 
 
-    var mixer = mixitup('.newest__inner');
+    let mixer = mixitup('.newest__inner');
 
 });
 
